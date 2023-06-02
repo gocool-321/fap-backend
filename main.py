@@ -26,7 +26,7 @@ def face_attraction_value(image):
   c_to_n = distance(chin,nose) #distance from chin to nose
   n_to_f = distance(nose,forehead) #distance from nose to forehead
   print(round((100 - abs((1.618 - ((n_to_f/c_to_n) + 0.4))/1.618)*100),2))
-  return {"attraction":   print(round((100 - abs((1.618 - ((n_to_f/c_to_n) + 0.4))/1.618)*100),2))}
+  return {"attraction":   round((100 - abs((1.618 - ((n_to_f/c_to_n) + 0.4))/1.618)*100),2)}
 
 app = FastAPI()
 
